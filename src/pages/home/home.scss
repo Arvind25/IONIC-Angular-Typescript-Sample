@@ -1,0 +1,54 @@
+page-home-new {
+
+    .header-home {
+        text-align: center;
+    } 
+    .header-home img {
+        max-width: 200px;
+        min-height: 115px;
+        padding: 40px 0 0 0;
+    }
+
+    .btn-courses {  
+        margin: 10px 10px 5px 10px !important;
+        width: 94% !important;
+        height: 45px !important;
+        font-size: 15px !important;
+      }
+    .accordion-list-new {
+        margin: 10px 10px 5px 10px !important;
+        width: 94% !important;
+        font-size: 15px !important;
+        background: #ffffff;
+    }
+    .section-new {
+        background: color($colors, primary);
+        color: #000;
+        margin-top: 10px !important;
+        margin-bottom: 0px !important;
+    }
+    .section-active-new {
+        background: color($colors, primary);
+        color: #fff;
+        margin-bottom: 0px !important;
+        margin-top: 10px !important;
+    }
+ 
+    .child-new {
+        background: #e8e7e6;
+        color: #000;
+        margin-bottom: 1px !important;
+    }
+    .label {
+        margin: 0px;
+    }
+    .list-header-new {
+        margin: 0px !important;
+    }
+    .list {
+        margin-bottom: 0px !important; 
+    }
+    .list-new{
+        margin: 0px 0px 4px 0px !important;
+    }
+}

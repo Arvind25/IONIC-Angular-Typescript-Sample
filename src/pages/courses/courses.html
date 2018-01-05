@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Courses</ion-title>
+        
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+
+    <div class="header-courses">
+        <img src="assets/img/logo.png">
+        <h3>English Learning Classes</h3>
+    </div>  
+    <ion-list>
+        <button ion-item (click)="openPage('misc')">
+            Miscellaneous
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </button>
+        <button ion-item (click)="openPage('pte')">
+            PTE
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </button>
+        <button ion-item (click)="openPage('ielts')">
+            IELTS
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </button>
+        <button ion-item (click)="openPage('grm')">
+            English Grammer
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </button>
+    </ion-list>
+    <button ion-button class="btn-courses" block (click)="openPage('register')" >Register to access courses</button>
+</ion-content>

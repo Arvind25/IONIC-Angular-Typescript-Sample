@@ -1,0 +1,8 @@
+{
+  "name": "Ionic3",
+  "app_id": "LMS",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

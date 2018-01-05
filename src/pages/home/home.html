@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+     	Courses
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+	<div class="header-home">
+        <img src="assets/img/logo.png">
+        <h3>English Learning Classes</h3>
+    </div>
+	<ion-list class="accordion-list-new">
+		<ion-list-header *ngFor="let item of information; let i = index" no-lines no-padding class="list-header-new">
+			<button ion-item (click)="toggleSection(i)" detail-none [ngClass]="{'section-active-new': item.open, 'section-new': !item.open}">
+				<ion-icon item-right name="arrow-dropdown" *ngIf="!item.open && item.descriptionformat.length >0 "></ion-icon>
+				<ion-icon item-right name="arrow-dropup" *ngIf="item.open && item.descriptionformat.length >0 "></ion-icon>
+				<ion-icon item-right name="arrow-dropright" *ngIf="item.descriptionformat.length <= 0 "></ion-icon>
+				{{ item.name }}
+			</button>
+
+			<ion-list *ngIf="item.descriptionformat && item.open" no-lines class="list-new">
+				<ion-list-header *ngFor="let child of item.descriptionformat; let j = index" no-padding class="list-header-new">
+					<button ion-item (click)="toggleItem(i, j)" *ngIf="child.descriptionformat" class="child-new" >
+						<ion-icon item-left name="book" ></ion-icon>
+						{{ child.name }}
+						<ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+					</button>					
+				</ion-list-header>
+			</ion-list>			
+		</ion-list-header>
+	</ion-list>
+</ion-content>

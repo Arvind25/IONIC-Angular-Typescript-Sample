@@ -1,0 +1,56 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Sign-up</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+
+    <div class="header-register">
+         <img src="assets/img/logo.png">
+        <h3>English Learning Classes</h3>
+    </div>
+
+    <ion-list>
+        <ion-item class="register-items">
+            <ion-icon name="person" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="username" type="text" placeholder="User name"></ion-input>
+        </ion-item>
+        <ion-item class="register-items">
+           <ion-icon name="person" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="firstname" type="text" placeholder="First name"></ion-input>
+        </ion-item>
+        <ion-item class="register-items">
+           <ion-icon name="person" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="lastname" type="text" placeholder="Last name"></ion-input>
+        </ion-item>
+        <ion-item class="register-items">
+            <ion-icon name="mail" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="email" type="email" placeholder="Email"></ion-input>
+        </ion-item>        
+        <ion-item class="register-items">
+            <ion-icon name="key" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="password" type="password" placeholder="Password"></ion-input>
+        </ion-item>
+        <ion-item class="register-items">
+             <ion-icon name="key" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="c_password" type="password" placeholder="Confirm password"></ion-input>
+        </ion-item> 
+        <ion-item class="register-items">
+            <ion-icon name="phone-portrait" item-left primary></ion-icon>
+            <ion-input [(ngModel)]="phone" type="text" placeholder="Mobile"></ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label>Select course</ion-label>
+            <ion-select [(ngModel)]="course">
+                <!--<ion-option *ngFor="let item of information" value="{{item.id}}" >{{item.name}}</ion-option>-->
+                <ion-option  value="1">Miscellaneous</ion-option>
+                <ion-option  value="2">IELTS</ion-option>
+                <ion-option  value="3">PTE</ion-option>
+                <ion-option  value="4">English-Grammar</ion-option>
+            </ion-select>
+        </ion-item>
+        <button ion-button block class="btn-register" (click)="addUser()">Register</button>
+       <!--<button ion-button block class="btn-new" ng-click="">Register</button>-->
+    </ion-list>
+</ion-content>

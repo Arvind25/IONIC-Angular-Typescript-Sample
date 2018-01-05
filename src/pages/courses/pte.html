@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>PTE</ion-title>
+        
+    </ion-navbar>
+</ion-header>
+
+<ion-content no-bounce>
+
+    <div class="header-courses">
+        <img src="assets/img/logo.png">
+        <h3>English Learning Classes</h3>
+    </div>     
+    <ion-list>
+        <ion-item detail-push>
+            <ion-icon name="mic" item-left primary></ion-icon>
+            Speaking
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </ion-item>
+        <ion-item detail-push>
+            <ion-icon name="pulse" item-left primary></ion-icon>
+            Listening
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </ion-item>
+        <ion-item detail-push>
+            <ion-icon name="clipboard" item-left primary></ion-icon>
+            Reading
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </ion-item>
+        <ion-item detail-push>
+            <ion-icon name="paper" item-left primary></ion-icon>
+            Practice tests
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </ion-item>
+        <ion-item detail-push>
+            <ion-icon name="desktop" item-left primary></ion-icon>
+            Online classes
+            <ion-icon item-right primary name="arrow-dropright" ></ion-icon>
+        </ion-item>
+    </ion-list>
+    <button ion-button class="btn-courses" block (click)="openPage('register')" >Register to access courses</button>
+</ion-content>
