@@ -12,12 +12,12 @@ Follow these instructions to install the app and run it with the mock (in-memory
 
 1. Clone the repository:
     ```
-    git clone https://github.com/khem-raj/IONIC-Angular-Typescript-LMS-Mobileapp.git
+    git clone https://github.com/Arvind25/IONIC-Angular-Typescript-Sample.git
     ```
 
-1. Navigate to the `IONIC-Angular-Typescript-LMS-Mobileapp` directory :
+1. Navigate to the `IONIC-Angular-Typescript-Sample` directory :
     ```
-    cd IONIC-Angular-Typescript-LMS-Mobileapp
+    cd IONIC-Angular-Typescript-Sample
     ```
 
 1. Install the dependencies
@@ -34,4 +34,4 @@ Follow these instructions to install the app and run it with the mock (in-memory
 
 Follow these instructions to run it with the REST data services:
 
-1. Add service reference to `provider/rest
+1. Add service url reference to `provider/rest
