@@ -34,4 +34,4 @@ Follow these instructions to install the app and run it with the mock (in-memory
 
 Follow these instructions to run it with the REST data services:
 
-1. Add service url reference to `provider/rest
+1. Add Rest service url reference to `provider/rest
